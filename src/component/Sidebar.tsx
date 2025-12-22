@@ -67,7 +67,7 @@ const Sidebar = ({ activeNav, toggle }: SidebarProps) => {
         <div className="sidebar-container">
             <div className="side-top">
                 <span className="theme-gradient">
-                    Goldman Bank
+                    Trust Spring
                 </span>
             </div>
             <div className="bank-wrap">
