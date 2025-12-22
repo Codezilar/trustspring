@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-const SYSTEM_PROMPT = `You are Kingdox AI - the intelligent banking assistant. Respond directly and naturally as if you're a knowledgeable human agent.
+const SYSTEM_PROMPT = `You are Trust Spring AI - the intelligent banking assistant. Respond directly and naturally as if you're a knowledgeable human agent.
 
 KEY DIRECTIVES:
 - Answer questions directly without unnecessary explanations
@@ -57,7 +57,7 @@ const DIRECT_RESPONSES = [
   },
   {
     patterns: [/deposit|add money/i],
-    response: "You can deposit funds via bank transfer, mobile check deposit, or at any Kingdox ATM."
+    response: "You can deposit funds via bank transfer, mobile check deposit, or at any Trust Spring ATM."
   },
   {
     patterns: [/balance|how much money/i],
@@ -65,7 +65,7 @@ const DIRECT_RESPONSES = [
   },
   {
     patterns: [/transfer money|send money/i],
-    response: "To send money, go to 'Transfers' in your dashboard. You can transfer to other Kingdox accounts or external banks."
+    response: "To send money, go to 'Transfers' in your dashboard. You can transfer to other Trust Spring accounts or external banks."
   },
 
   // === INVESTMENTS (GENERAL) ===
@@ -97,7 +97,7 @@ const DIRECT_RESPONSES = [
   },
   {
     patterns: [/rent|rental income/i],
-    response: "Yes, property investors earn monthly rental income which is automatically credited to your Kingdox account."
+    response: "Yes, property investors earn monthly rental income which is automatically credited to your Trust Spring account."
   },
   {
     patterns: [/property.*safe|risk/i],
@@ -209,13 +209,13 @@ const DIRECT_RESPONSES = [
   },
   {
     patterns: [/complaint|feedback/i],
-    response: "We're sorry to hear that! Please send your complaint or feedback to kingdox@gmail.com."
+    response: "We're sorry to hear that! Please send your complaint or feedback to Trust Spring@gmail.com."
   },
 
   // === GREETINGS & SMALL TALK ===
   {
     patterns: [/hello|hi|hey/i],
-    response: "Hi! I'm Kingdox AI. How can I assist with your banking today?"
+    response: "Hi! I'm Trust Spring AI. How can I assist with your banking today?"
   },
   {
     patterns: [/how are you/i],
@@ -231,7 +231,7 @@ const DIRECT_RESPONSES = [
   },
   {
     patterns: [/bye|goodbye|see you/i],
-    response: "Goodbye! Thanks for banking with Kingdox."
+    response: "Goodbye! Thanks for banking with Trust Spring."
   },
 
   // === ADDITIONAL ONLINE BANKING TOPICS (for 100+ coverage) ===
@@ -277,7 +277,7 @@ const DIRECT_RESPONSES = [
   },
   { 
     patterns: [/atm|cash withdrawal/i], 
-    response: "You can withdraw cash at any Kingdox ATM or partner ATM globally." 
+    response: "You can withdraw cash at any Trust Spring ATM or partner ATM globally." 
   },
   { 
     patterns: [/overdraft/i], 
@@ -289,7 +289,7 @@ const DIRECT_RESPONSES = [
   },
   { 
     patterns: [/rewards|points|cashback/i], 
-    response: "Earn cashback and points when you use your Kingdox card for purchases!" 
+    response: "Earn cashback and points when you use your Trust Spring card for purchases!" 
   },
   { 
     patterns: [/insurance/i], 
@@ -324,7 +324,7 @@ const DIRECT_RESPONSES = [
   { patterns: [/account upgrade/i], response: "You can upgrade your account in 'Settings' → 'Upgrade Plan' to access more benefits." },
   { patterns: [/account downgrade/i], response: "Downgrading is possible at any time through your dashboard settings." },
   { patterns: [/transaction limit/i], response: "Daily transfer limits depend on your verification level. Standard users can send up to $10,000/day." },
-  { patterns: [/instant transfer/i], response: "Yes! Instant transfers between Kingdox users are available 24/7." },
+  { patterns: [/instant transfer/i], response: "Yes! Instant transfers between Trust Spring users are available 24/7." },
   { patterns: [/transfer failed/i], response: "If a transfer failed, check if the recipient details are correct and your balance is sufficient." },
   { patterns: [/pending transfer/i], response: "Pending transfers are usually processed within 24 hours. Check the 'Transfers' tab for updates." },
   { patterns: [/cancel transfer/i], response: "Transfers can only be canceled if they haven’t been processed yet. Visit the 'Transfers' section quickly to cancel." },
@@ -336,8 +336,8 @@ const DIRECT_RESPONSES = [
   { patterns: [/bank code|routing number/i], response: "Your routing number is displayed under 'Account Details' in your dashboard." },
   { patterns: [/deposit not showing/i], response: "Deposits usually reflect within minutes. If delayed, please wait up to 2 hours or contact support." },
   { patterns: [/deposit limit/i], response: "Deposit limits depend on your KYC level. Verified users can deposit up to $50,000 daily." },
-  { patterns: [/direct deposit/i], response: "Yes, you can set up direct deposits from your employer. Use your Kingdox account and routing number." },
-  { patterns: [/cash deposit/i], response: "Cash deposits can be made at any Kingdox partner ATM or local branch." },
+  { patterns: [/direct deposit/i], response: "Yes, you can set up direct deposits from your employer. Use your Trust Spring account and routing number." },
+  { patterns: [/cash deposit/i], response: "Cash deposits can be made at any Trust Spring partner ATM or local branch." },
   { patterns: [/mobile deposit|check deposit/i], response: "Deposit checks easily by taking a photo in the app under 'Deposit Check'." },
   { patterns: [/withdrawal limit/i], response: "Your daily withdrawal limit is shown in your account settings. You can request an increase anytime." },
   { patterns: [/atm fee/i], response: "We don’t charge ATM fees, but the local ATM provider might." },
@@ -354,7 +354,7 @@ const DIRECT_RESPONSES = [
   { patterns: [/change address/i], response: "You can update your address in 'Profile' → 'Personal Information'." },
   { patterns: [/update details/i], response: "You can update your phone, address, or email anytime in your profile settings." },
   { patterns: [/open business account/i], response: "Open a business account online in 10 minutes. You'll need your company registration number and ID." },
-  { patterns: [/close business account/i], response: "To close your business account, please contact business support at business@kingdox.com." },
+  { patterns: [/close business account/i], response: "To close your business account, please contact business support at business@Trust Spring.com." },
   { patterns: [/company verification/i], response: "Business accounts require company registration, tax ID, and proof of address." },
   { patterns: [/invoice|billing/i], response: "You can create and send invoices directly from your business dashboard." },
   { patterns: [/payment link/i], response: "Generate payment links instantly in your business account to receive payments easily." },
@@ -395,12 +395,12 @@ const DIRECT_RESPONSES = [
   { patterns: [/notification not received/i], response: "Make sure notifications are enabled in both the app and phone settings." },
   { patterns: [/open hours|working hours/i], response: "Our digital services run 24/7, and customer support is always available." },
   { patterns: [/branch location/i], response: "We’re fully online, but partner branches are listed under 'Find Us' in your app." },
-  { patterns: [/atm nearby/i], response: "Find the nearest Kingdox ATM in your app under 'ATM Locator'." },
+  { patterns: [/atm nearby/i], response: "Find the nearest Trust Spring ATM in your app under 'ATM Locator'." },
   { patterns: [/supported countries/i], response: "We currently operate in over 40 countries worldwide." },
   { patterns: [/currency supported/i], response: "We support USD, EUR, GBP, and several local currencies." },
-  { patterns: [/contact ceo|manager/i], response: "For executive inquiries, please email corporate@kingdox.com." },
-  { patterns: [/bank license|regulated/i], response: "Yes, Kingdox is a fully licensed and regulated financial institution." },
-  { patterns: [/terms|privacy policy/i], response: "You can view our terms and privacy policy at kingdox.com/legal." },
+  { patterns: [/contact ceo|manager/i], response: "For executive inquiries, please email corporate@Trust Spring.com." },
+  { patterns: [/bank license|regulated/i], response: "Yes, Trust Spring is a fully licensed and regulated financial institution." },
+  { patterns: [/terms|privacy policy/i], response: "You can view our terms and privacy policy at Trust Spring.com/legal." },
   { patterns: [/fees|charges/i], response: "Our fee schedule is transparent and listed under 'Pricing' in your dashboard." },
   { patterns: [/cancel subscription/i], response: "Cancel any paid plan in 'Settings' → 'Subscription' anytime." },
   { patterns: [/update app/i], response: "Keep your app updated to enjoy the latest features and improvements." },
@@ -417,7 +417,7 @@ const DIRECT_RESPONSES = [
   { patterns: [/exchange wallet|multi wallet/i], response: "You can create multiple currency wallets under 'Wallets' in your account." },
   { patterns: [/crypto wallet/i], response: "You can link your crypto wallet securely under 'Assets' in the app." },
   { patterns: [/help center/i], response: "Visit our in-app Help Center for tutorials, FAQs, and live chat support." },
-  { patterns: [/newsletter/i], response: "Subscribe to our newsletter for financial tips and updates from Kingdox." },
+  { patterns: [/newsletter/i], response: "Subscribe to our newsletter for financial tips and updates from Trust Spring." },
 ];
 
 
@@ -492,7 +492,7 @@ export async function POST(req: Request) {
 
     if (!lastMessage.trim()) {
       return NextResponse.json({
-        reply: "Hi! I'm Kingdox AI. How can I help you today?"
+        reply: "Hi! I'm Trust Spring AI. How can I help you today?"
       });
     }
 
