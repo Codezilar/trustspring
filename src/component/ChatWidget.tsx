@@ -39,7 +39,7 @@ export default function ChatWidget() {
       // Final fallback
       const fallbackMsg: Message = { 
         role: 'assistant', 
-        content: "I'm currently helping other customers. Please try again in a moment or call 1-800-KINGDOX for immediate assistance." 
+        content: "I'm currently helping other customers. Please try again in a moment or call 1-800-Trust Spring for immediate assistance." 
       };
       setMessages(prev => [...prev, fallbackMsg]);
     } finally {
@@ -73,7 +73,7 @@ export default function ChatWidget() {
           <div className="chat-header">
             <div className="chat-header-left">
               <div className="status-indicator"></div>
-              <h2 className="chat-title">Kingdox Assistant</h2>
+              <h2 className="chat-title">Trust Spring Assistant</h2>
             </div>
             <div className="chat-header-actions">
               <button
@@ -106,7 +106,7 @@ export default function ChatWidget() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                   </svg>
                 </div>
-                <p>Hello! I'm Kingdox Assistant.</p>
+                <p>Hello! I'm Trust Spring Assistant.</p>
                 <p>How can I help you with your banking needs?</p>
               </div>
             )}
