@@ -46,7 +46,7 @@ const Sidebar = ({ activeNav, toggle }: SidebarProps) => {
       <div className={`sidebar ${activeNav ? "activeNav" : "inactiveNav"}`}>
         <div className="sidebar-container">
           <div className="side-top">
-            <span className="theme-gradient">Goldman Bank</span>
+            <span className="theme-gradient">Trust Spring</span>
           </div>
           {/* Minimal static content that matches the final structure */}
           <div className="banking">

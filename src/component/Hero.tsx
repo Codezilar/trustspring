@@ -42,7 +42,7 @@ const Hero = () => {
               </div>
             </div>
             <div className="home-hero-center">
-              <span className="theme-gradient">Welcome to Goldman Bank</span>
+              <span className="theme-gradient">Welcome to Trust Spring</span>
               <h2 className="">
                 Experience the future of banking with our secure <span>innovative,</span> and <span>user-friendly platform</span> designed for modern financial needs.
               </h2>
