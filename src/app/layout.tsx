@@ -5,7 +5,7 @@ import {
 } from '@clerk/nextjs'
 
 export const metadata: Metadata = {
-  title: "Goldman Bank",
+  title: "Trust Spring",
   description: "Experience the future of banking with our secure innovative, and user-friendly platform designed for modern financial needs.",
 };
 
@@ -18,7 +18,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <head>
-          <link rel="icon" href="/goldmanbank.jpeg" sizes="any" />
+          <link rel="icon" href="/trustspring.jpeg" sizes="any" />
         </head>
         <body>
           {children}
