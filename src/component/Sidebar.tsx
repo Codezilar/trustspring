@@ -105,7 +105,7 @@ const Sidebar = ({ activeNav, toggle }: SidebarProps) => {
                       )}
                   </div>
               </div>
-              {/* <div className="banking">
+              <div className="banking">
                   <h1>Investments and Loans</h1>
                   <div className="banking-content">
                       <Link href={'/investdeposit'}>
@@ -121,7 +121,7 @@ const Sidebar = ({ activeNav, toggle }: SidebarProps) => {
                           <span onClick={toggle}><MdInventory /> <h3>Invest In Containers</h3></span>
                       </Link>
                   </div>
-              </div> */}
+              </div>
               <div className="banking">
                   <h1>FINANCIAL SERVICES</h1>
                   <div className="banking-content">
