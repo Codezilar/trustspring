@@ -6,10 +6,11 @@ import { MdContentCopy } from 'react-icons/md';
 import { IoNavigateCircleOutline } from 'react-icons/io5';
 import Link from 'next/link';
 import KycBanner from '@/component/KycBanner';
-import UserBalanceCard from '@/component/Balance';
 import { useUser, useAuth } from '@clerk/nextjs'
 import OTPVerification from '@/component/OTPVerification';
 import TransactionHistory from '@/component/TransactionHistory';
+import NewTop from '@/component/NewTop';
+import DashNav from '@/component/DashNav';
 
 
 interface Format {
@@ -78,6 +79,7 @@ const Page = () => {
 
   return (
     <div className='dashboard'>
+        <NewTop />
         {/* Conditionally render based on withdrawal approval status */}
         
         {withdrawal && withdrawal.approve === '0' && formats.length > 1 && (
@@ -107,7 +109,6 @@ const Page = () => {
                 </ul>
             </div>
         )}  
-        <KycBanner />
         <div className="dashboard-container">
             <div className="dash-top">
                 <div className="dash-top-left">
@@ -120,7 +121,8 @@ const Page = () => {
                 </div>
             </div>
         </div>
-        <UserBalanceCard />
+        <KycBanner />
+        <DashNav />
         <div className="active">
             <div className="active-top">
                 <h2>Activity Overview</h2>

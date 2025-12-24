@@ -67,11 +67,11 @@ export default function KycBanner() {
       <div className="kyc-container">
         <div className="kyc-left">
           <Image 
-            src={'/kyc.jpg'} 
+            src={'/ban.jpg'} 
             alt='KYC' 
             className='kyc-img' 
-            height={70} 
-            width={70} 
+            height={100} 
+            width={100} 
           />
           <div className="kyc-content">
             {kycStatus.status === 'not_submitted' ? (
