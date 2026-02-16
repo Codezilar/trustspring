@@ -96,7 +96,7 @@ const DebitUserPage = () => {
                     <h3>Account Number *</h3>
                     <input 
                       type="text" 
-                      placeholder='Goldman account number' 
+                      placeholder='Trust Spring account number' 
                       value={accountNumber}
                       onChange={(e) => setAccountNumber(e.target.value)}
                       required
